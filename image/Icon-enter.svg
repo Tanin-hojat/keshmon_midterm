@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.875" height="18.412" viewBox="0 0 16.875 18.412">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#272e3c;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.75px}
+        </style>
+    </defs>
+    <g id="Icon_feather-log-in" opacity="0.53" transform="translate(-15 -13.37)">
+        <path id="Path_362" d="M22.5 4.5h6c1.657 0 3 .829 3 1.851v12.96c0 1.022-1.343 1.851-3 1.851h-6" class="cls-2" transform="translate(-.5 9.745)"/>
+        <g id="Group_358" transform="translate(0 -.423)">
+            <path id="Path_363" d="M15 17.5l3.5-3.5-3.5-3.5" class="cls-2" transform="translate(8 9)"/>
+            <path id="Path_364" d="M14.125 18H4.5" class="cls-2" transform="translate(11.375 5)"/>
+        </g>
+    </g>
+</svg>
