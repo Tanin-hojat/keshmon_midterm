@@ -611,11 +611,11 @@ h2 {
 
 .product-box {
   width: 22%;
+  object-fit: cover;
   background-color: #ffffff;
   border-radius: 12px;
   text-align: center;
   min-height: 450px;
-  padding: 10px;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   transition: box-shadow 0.3s ease;
   border: 1px solid rgba(0, 0, 0, 0.05);
@@ -627,22 +627,25 @@ h2 {
 
 .product-box img {
   width: 100%;
-  border-radius: 8px 8px 0 0;
+  border-radius: 12px 12px 12px 12px;
 }
 
 .product-box h5 {
   font-size: 25px;
   margin: 50px 0;
   color: #1c1c1c;
+  font-weight: bold;
 }
 
 .product-box p {
-  font-size: 20px;
-  margin-top: 20px;
+  font-size: 18px;
+  margin-top: -15px;
+  padding: 15px;
   direction: rtl;
   text-align: justify;
   color: #686868;
 }
+
 .more-products-wrapper {
   text-align: center;
   margin-top: 30px;
@@ -660,13 +663,345 @@ h2 {
   transition: all 0.3s ease;
 }
 
+.more-products-btn:hover {
+  background-color: #1ebc8a19;
+}
+
 .products-section {
-  width: 100vw;
+  width: 100%;
   background-color: #fff;
-  box-shadow: 0 -12px 20px rgba(0, 0, 0, 0.05), 0 12px 20px rgba(0, 0, 0, 0.05);
+  box-shadow:
+    0 -12px 20px rgba(0, 0, 0, 0.07),
+    0 12px 20px rgba(0, 0, 0, 0.07);
   padding: 60px 0;
   overflow-x: hidden;
+  position: relative;
+  z-index: 2;
 }
+
+.farmers-slider-section {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  background-color: #E0E0DE;
+  direction: rtl;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.farmers-box {
+  width: 30%;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.farmers-box h3 {
+  font-size: 36px;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.farmers-box p {
+  font-size: 20px;
+  line-height: 2;
+  color: #444;
+}
+
+.more-products-wrapper2 {
+  margin-top: 30px;
+}
+
+.more-products-btn2 {
+  font-size: 16px;
+  color: #1EBC8B;
+  background-color: #fff;
+  border: 1px solid #1EBC8B;
+  border-radius: 25px;
+  min-width: 300px;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.more-products-btn2:hover {
+  background-color: #1ebc8a19;
+}
+
+.farmers-slider-container {
+  height: 426px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.farmers-slider {
+  display: flex;
+  transition: all 0.3s ease-in-out;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.farmers-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.farmer-card {
+  width: 300px;
+  min-width: 300px;
+  background-color: #fff;
+  border-radius: 12px;
+  margin: 0 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex-shrink: 0;
+  height: 420px;
+}
+
+.farmer-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.farmer-card h4 {
+  font-size: 18px;
+  margin: 12px 0 6px;
+}
+
+.farmer-card p {
+  font-size: 15px;
+  color: #333;
+  padding: 0 12px 12px;
+}
+
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 90px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  font-size: 28px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 5;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.slider-nav.left {
+  left: 10px;
+}
+
+.slider-nav.right {
+  right: 10px;
+}
+
+.sale-box {
+  width: 22%;
+  object-fit: cover;
+  background-color: #ffffff;
+  border-radius: 12px;
+  text-align: center;
+  min-height: 430px;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transition: box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.sale-box:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+.sale-box img {
+  width: 100%;
+  border-radius: 12px 12px 12px 12px;
+}
+
+.sale-box h5 {
+  font-size: 15px;
+  color: #1c1c1c;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #f5f5f5;
+  padding: 60px;
+  direction: rtl;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.footer-left {
+  width: 30%;
+}
+
+.support-contact h4.highlighted {
+  color: #1EBC8B;
+  margin-bottom: 10px;
+}
+
+.support-contact p {
+  margin: 4px 0;
+  font-size: 16px;
+  color: #444;
+}
+
+.phone-link {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.footer-links h5 {
+  font-size: 18px;
+  margin-top: 24px;
+  color: #333;
+}
+
+.footer-links ul {
+  list-style-type: disc;
+  padding-right: 20px;
+  margin: 0;
+}
+
+.footer-links li {
+  margin: 8px 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #444;
+}
+
+.footer-links a:hover {
+  color:#1ebc8aa8
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 16px;
+}
+
+.footer-icon {
+  text-align: center;
+  flex: 1;
+}
+
+.footer-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-icon span {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.footer-icon span:hover{
+  color:#1ebc8aa8  
+}
+
+.footer-brand-descriptions {
+  margin-top: 24px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+  font-weight: bold;
+}
+
+.footer-right {
+  width: 65%;
+  padding: 0 40px;
+  direction: rtl;
+  text-align: right;
+  color: #333;
+}
+
+.footer-right h4 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.social-icons img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer-hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 24px 0;
+}
+
+.footer-logo-description {
+  margin-bottom: 32px;
+}
+
+.footer-logo {
+  width: 160px;
+  margin-bottom: 20px;
+}
+
+.footer-about {
+  font-size: 14px;
+  line-height: 2;
+  color: #444;
+  text-align: justify;
+}
+
+.footer-certificates {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.footer-certificates img {
+  height: 48px;
+  object-fit: contain;
+}
+
+.footer-copyright {
+    width: 100%;
+    background-color: #434242;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 15px;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+  }
+  
+
 
 /*فقط در حالت موبایل*/
 @media (max-width: 768px) {
