@@ -16,7 +16,7 @@
     border: none;
     margin: 15px 0;
   }
-  
+
   .header-menu {
     background: #fff;
     padding: 10px 20px;
@@ -839,7 +839,7 @@ h2 {
 
 .footer {
   background-color: #f5f5f5;
-  padding: 60px;
+  padding-top: 20px;
   direction: rtl;
   display: flex;
   justify-content: space-between;
@@ -986,7 +986,7 @@ h2 {
 .footer-certificates {
   display: flex;
   gap: 16px;
-  margin-top: 20px;
+  margin-top: 120px;
 }
 
 .footer-certificates img {
@@ -998,14 +998,13 @@ h2 {
     width: 100%;
     background-color: #434242;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
     font-size: 15px;
     color: #ffffff;
     margin-top: 20px;
     margin-bottom: 0;
     box-sizing: border-box;
   }
-  
 
 /*فقط در حالت موبایل*/
 @media (max-width: 768px) {
