@@ -115,8 +115,10 @@
 
       <div class="value-wrapper1">
         <img src="image/1.png" alt="آیکون 1" class="value-icon-top">
-        <img src="image/right-box.png" alt="باکس راست بالا" class="value-box box-top right">
-        <img src="image/farmer.png" alt="کشاورز" class="value-farmer">
+        <div class="value-images1">
+          <img src="image/right-box.png" alt="باکس راست بالا" class="value-box box-top right">
+          <img src="image/farmer.png" alt="کشاورز" class="value-farmer">
+        </div>        
         <div class="value-content">
           <img src="image/title.png" alt="عنوان" class="value-title-icon">
           <h4>کشاورزی که قصه‌شو می‌دونیم</h4>
@@ -125,10 +127,13 @@
           </p>
         </div>
       </div>      
-          
+               
       <div class="value-wrapper2">
         <img src="image/2.png" alt="آیکون 2" class="value-icon-top">
-        <img src="image/center-box.png" alt="باکس وسط بالا" class="value-box box-top center">
+        <div class="value-images2">
+          <img src="image/laboratory.png" alt="آزمایشگاه" class="value-laboratory">
+          <img src="image/center-box.png" alt="باکس وسط بالا" class="value-box box-top center">
+        </div>
         <div class="value-content">
           <img src="image/title.png" alt="آیکون عنوان" class="value-title-icon">
           <h4>تایید اصالت محصول با آزمایش</h4>
@@ -136,9 +141,7 @@
             گروه کنترل کیفی متخصص، محصولات رو نمونه‌برداری و بررسی می‌کنه و در صورت لزوم به آزمایشگاه‌های تایید شده توسط سازمان استاندارد می‌فرسته. برای هر بار موجود شدن محصول هم آزمایش تکرار میشه.
           </p>
         </div>
-        <img src="image/laboratory.png" alt="آزمایشگاه" class="value-laboratory">
-      </div>      
-      
+      </div>    
       <div class="value-wrapper3">
         <img src="image/3.png" alt="آیکون 3" class="value-icon-top">
         <img src="image/left-box.png" alt="باکس چپ بالا" class="value-box box-top left">
@@ -179,7 +182,7 @@
         <img src="image/shipping.png" alt="ارسال محصول" class="value-shipping">
       </div>      
     </div>
-  </section>
+  </section> 
 
   <section class="products-section">
   <h2>محصولات کشمون</h2>
@@ -284,6 +287,54 @@
   </div>
   </section>
 
+  <section class="farmers-mobile-section">
+    <div class="mobile-farmers-wrapper">
+      <h3 class="mobile-title">کشاورزها و زنبوردارهای کشمون</h3>
+  
+      <div class="mobile-slider-container">
+        <div class="slider-nav left" onclick="scrollMobileSlider('right')">
+          &#10095;
+        </div>
+        <div class="slider-nav right" onclick="scrollMobileSlider('left')">
+          &#10094;
+        </div>
+  
+        <div class="mobile-slider" id="mobileSlider">
+          <div class="farmer-card">
+            <img src="image/131.jpg" alt="حَجی لطفعلی">
+            <h4>حَجی لطفعلی</h4>
+            <p>لطفعلی نجفی، یکی از بهترین کشاورزهاست ...</p>
+          </div>
+          <div class="farmer-card">
+            <img src="image/46924.jpg" alt="ممد رضا افروزی">
+            <h4>ممد رضا افروزی</h4>
+            <p>محمدرضا افروزی متولد روستای رومشتیک...</p>
+          </div>
+          <div class="farmer-card">
+            <img src="image/43734.jpg" alt="تارا بیژندی">
+            <h4>تارا بیژندی</h4>
+            <p>خانم بیژندی از سال 1401 عروسک‌های دست‌ساز...</p>
+          </div>
+          <div class="farmer-card">
+            <img src="image/9505.jpg" alt="زینب عیسی">
+            <h4>زینب عیسی</h4>
+            <p>زینب نیکرو کشاورز اهل قاین...</p>
+          </div>
+          <div class="farmer-card">
+            <img src="image/44761.jpg" alt="بی بی حکیمه حسینی">
+            <h4>بی بی حکیمه حسینی</h4>
+            <p>تولیدکننده محصولات خانگی در شهرستان هامون...</p>
+          </div>
+        </div>
+      </div>
+  
+      <p class="mobile-desc">
+        اگر کشاورز یا زنبوردار هستید و دوست دارید با کشمون همکاری کنید و با شرایط همکاری آشنا بشید اینجا کلیک کنید
+      </p>
+      <button class="more-products-btn2">شرایط و نحوه‌ی همکاری</button>
+    </div>
+  </section>
+
   <section class="products-section">
     <h2>خرید عمده یا سازمانی</h2>
     <div class="product-boxes">
@@ -377,6 +428,62 @@
       </div>       
     </footer>
     
+    <footer class="footer-mobile-footer">
+      <div class="support-contact">
+        <h4 class="highlighted">تماس با پشتیبانی</h4>
+        <p>شنبه تا چهارشنبه (روزهای غیر تعطیل)</p>
+        <p>8 صبح تا ساعت 20:00</p>
+        <a href="tel:09158674001" class="phone-link">09158674001</a>
+      </div>
+    
+      <div class="social-icons">
+        <a href="#"><img src="image/linkedin.svg" alt="LinkedIn"></a>
+        <a href="#"><img src="image/twitter.svg" alt="Twitter"></a>
+        <a href="#"><img src="image/telegram.svg" alt="Telegram"></a>
+        <a href="#"><img src="image/instagram.svg" alt="Instagram"></a>
+      </div>
+    
+      <hr class="footer-hr">
+    
+      <div class="footer-links">
+        <h5>لینک‌های مفید</h5>
+        <ul>
+          <li><a href="#">داستان کشمون</a></li>
+          <li><a href="#">نحوه‌ی تعیین قیمت در کشمون؟</a></li>
+          <li><a href="#">سوالات متداول</a></li>
+          <li><a href="#">قوانین و شرایط</a></li>
+        </ul>
+      </div>
+    
+      <div class="footer-icons">
+        <div class="footer-icon">
+          <img src="image/return-icon.svg" alt="شرایط مرجوعی">
+          <span>شرایط مرجوعی</span>
+        </div>
+        <div class="footer-icon">
+          <img src="image/shipping-icon.svg" alt="اطلاعات ارسال">
+          <span>اطلاعات ارسال</span>
+        </div>
+        <div class="footer-icon">
+          <img src="image/follow-up-icon.svg" alt="پیگیری سفارش">
+          <span>پیگیری سفارش</span>
+        </div>
+      </div>
+    
+      <div class="footer-logo-description">
+        <img src="image/logo-ver.png" alt="لوگوی کشمون" class="footer-logo" />
+        <p class="footer-about">
+          کشمون وب سایت خرید محصولات با کیفیت از کشاورز و زنبورداره. تمامی محصولات از کشاورزهای احراز هویت شده که کشمون بر کار اون‌ها نظارت میدانی داره، تامین می‌شه، بعد توسط تیم کنترل کیفیت کشمون تایید شده و در صورت لزوم به آزمایشگاه‌های معتبر فرستاده می‌شن تا خلوص و درجه بندیشون مشخص بشه.<br><br>
+          این محصولات تو بسته بندی استاندارد و تا حد امکان محیط زیستی همراه با شناسنامه‌ای که داخل جعبه قرار داره، به دست شما می‌رسه. شناسنامه یعنی هویت محصول، یعنی کدوم کشاورز با چه فرایندی و چه کیفیتی محصول رو تولید کرده. قیمت‌گذاری هم تو کشمون بر اساس درجه کیفی هر محصول طبق یک فرمول انجام می‌شه.
+        </p>
+      </div>
+    
+      <div class="footer-certificates">
+        <img src="image/110.png" alt="نماد 110" />
+        <img src="image/iwmf.png" alt="نماد iwmf" />
+        <img src="image/qaza.png" alt="نماد qaza" />
+      </div>
+    </footer>    
   
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -392,6 +499,33 @@
       };
     });
   </script>
+
+  <script>
+    function scrollMobileSlider(direction) {
+      const slider = document.getElementById("mobileSlider");
+      const scrollAmount = slider.offsetWidth * 0.8;
+      if (direction === "left") {
+        slider.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+      } else {
+        slider.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      }
+    }
+  </script>  
+
+  <script>
+    function swapBoxImage() {
+      const box = document.querySelector('.value-box.box-top.center');
+      if (window.innerWidth <= 768) {
+        box.src = "image/left-box.png";
+      } else {
+        box.src = "image/center-box.png";
+      }
+    }
+  
+    window.addEventListener('load', swapBoxImage);
+    window.addEventListener('resize', swapBoxImage);
+  </script>
+  
   
 </body>
 </html>
